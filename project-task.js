@@ -27,7 +27,7 @@ This activity reinforces:
 
 ---
 */
-
+/* 
 // ============================================
 // ❌ Original Code (Before Refactoring)
 // ============================================
@@ -52,7 +52,7 @@ console.log("Names in the list:");
 for (let i = 0; i < names.length; i++) {
     console.log(names[i]);
 }
-
+*/
 /*
 ===========================================
 🛠️ Steps for Refactoring
@@ -72,3 +72,47 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+
+// Script 1:
+function greet(name){
+   return `Welcome ${name}!`
+}
+
+console.log(greet('Alice'));
+console.log(greet('Bob'));
+console.log(greet('Charlie'));
+
+// Script 2:
+function sumCalc(num1, num2){
+   let sum = num1 + num2;
+   console.log(`The sum of ${num1} + ${num2} is: `);
+   return sum;
+} // How can I return the sum on the same line as the console.log statement? 
+
+console.log(sumCalc(5, 10));
+
+// Script 3:
+function prodCalc(num1, num2){
+   let product = num1 * num2;
+   console.log(`The product of ${num1} and ${num2} is: `);
+   return product;
+}
+
+console.log(prodCalc(5, 10));
+
+// Script 4:
+function nameList(array){
+   for (let i = 0; i< array.length; i++){
+      console.log(array[i]);
+   }
+}
+
+nameList(["Alice", "Bob", "Charlie"]);
+/*
+
+// Script 4 - Print names from a list
+let names = ["Alice", "Bob", "Charlie"];
+console.log("Names in the list:");
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+    */
