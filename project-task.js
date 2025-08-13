@@ -75,12 +75,12 @@ for (let i = 0; i < names.length; i++) {
 
 // Script 1:
 function greet(name){
-   return `Welcome ${name}!`
+   console.log(`Welcome ${name}!`);
 }
 
-console.log(greet('Alice'));
-console.log(greet('Bob'));
-console.log(greet('Charlie'));
+greet('Alice');
+greet('Bob');
+greet('Charlie');
 
 // Script 2:
 function sumCalc(num1, num2){
@@ -108,11 +108,3 @@ function nameList(array){
 }
 
 nameList(["Alice", "Bob", "Charlie"]);
-/*
-
-// Script 4 - Print names from a list
-let names = ["Alice", "Bob", "Charlie"];
-console.log("Names in the list:");
-for (let i = 0; i < names.length; i++) {
-    console.log(names[i]);
-    */
