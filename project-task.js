@@ -98,7 +98,7 @@ function prodCalc(num1, num2){
    return product;
 }
 
-console.log(prodCalc(5, 10));
+prodCalc(5, 10);
 
 // Script 4:
 function nameList(array){
